@@ -1,7 +1,8 @@
 ---
 - name: cisco transfer
   hosts: cisco
-  gahter_facts: false
+  gather_facts: false
+  connection: local
 
   tasks:
     - name: testing
@@ -9,6 +10,6 @@
         source_file="/home/omkar/om/test"
         dest_file=test
         enable_scp=True
-        host={{ host }}
+        host={{ ansible_host }}
         username={{ ansible_user }}
         password={{ ansible_pass }}
