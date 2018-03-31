@@ -1,0 +1,6 @@
+[cisco]
+RT1 host=10.1.1.2
+
+[cisco:vars]
+ansible_user="omkar"
+ansible_pass="omkar"
