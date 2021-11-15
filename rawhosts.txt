@@ -4,4 +4,5 @@ This file will be used for Ansible coding
 
 Adding line on quick-test
 this line is added on MASTER
+this line has to be deleted
 
