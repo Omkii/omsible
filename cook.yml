@@ -5,7 +5,10 @@
   connection: local
 
   tasks:
-    - name:sh ver
-  ansible.netcommon.cli_command:
-        command: "{{ show ip int brie }}"
-         
+
+
+  - name: Add loopback
+    
+    ios_interface:
+      name: Loopback1
+      state: present      
