@@ -6,6 +6,6 @@ RT2 ansible_host=10.2.2.2
 [cisco:vars]
 ansible_user="omkar"
 ansible_pass="omkar"
-ansible_connection=network_cli
-ansible_network_os=ios
+ansible_connection=ansible.netcommon.network_cli
+ansible_network_os=cisco.ios.ios
 
