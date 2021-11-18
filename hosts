@@ -1,6 +1,6 @@
 [cisco]
 RT1 ansible_host=10.1.1.2
-RT2 ansible_host=10.2.2.2
+10.2.2.2
 
 
 [cisco:vars]
