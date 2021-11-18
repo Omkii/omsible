@@ -3,8 +3,8 @@
   hosts: cisco
   gather_facts: True
   connection: local
-  ansible_user: "omkar"
-  ansible_pass: "omkar"
+
+
 
   tasks:
 
