@@ -7,14 +7,11 @@
   tasks:
 
 
-  - name: Add loopback
+#  - name: Add loopback
     
-    cisco.ios.ios_interface:
-      name: Loopback1
-      state: present      
-  - name: gather details
-    gather_facts:
-    gather_subset: all
+#    cisco.ios.ios_interface:
+#      name: Loopback1
+ #     state: present      
 
   - name: display hostname
 
