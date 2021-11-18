@@ -3,6 +3,9 @@
   hosts: cisco
   gather_facts: True
   connection: local
+  
+  
+
 
 
 
@@ -22,5 +25,5 @@
       msg: "THE HOST NAME IS {{ ansible_net_hostname }}"
     
       debug:
-        msg: "{{ ansible_net_version }}"
+        msg: "{{ ios_interface }}"
 
