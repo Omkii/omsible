@@ -1,13 +1,14 @@
 ---
 - name: Printing variables
   hosts: cisco
-  gather_facts: false
+  gather_facts: True
   connection: local
 
   tasks:
 
 
-#  - name: Add loopback
+  - name: Add loopback
+    gather_subset: all
     
 #    cisco.ios.ios_interface:
 #      name: Loopback1
@@ -19,5 +20,5 @@
       msg: "THE HOST NAME IS {{ ansible_net_hostname }}"
     
       debug:
-       msg: "{{ ansible_net_version }}"
+        msg: "{{ ansible_net_version }}"
 
