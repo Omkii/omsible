@@ -1,30 +1,29 @@
 ---
 - name: Printing variables
   hosts: cisco
-  gather_facts: True
-  connection: local
-  
-  
-
-
-
 
   tasks:
 
-
-    - name: Add loopback
-      cisco.ios.ios_facts:
-      gather_subset: all
-
+    - name: list IPs
+      debug:
+        msg: {{ ansible_net_all_ipv4_addresses }}
+    
+    - name: create Loopback
+      cisco.io.ios_interfaces:
+        config:
+          - name: Loopback1
+            description: TEST-Loopback
+            enabled: true
+            
 #    cisco.ios.ios_interface:
 #      name: Loopback1
  #     state: present      
 
-    - name: display hostname
+    # - name: display hostname
 
-      debug: 
-       msg: "THE HOST NAME IS {{ ansible_net_hostname }}"
+    #   debug: 
+    #    msg: "THE HOST NAME IS {{ ansible_net_hostname }}"
     
-       debug:
-         msg: "{{ ios_interface }}"
+    #    debug:
+    #      msg: "{{ ios_interface }}"
 
