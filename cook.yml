@@ -4,9 +4,9 @@
 
   tasks:
 
-    # - name: list IPs
-    #   debug:
-    #     msg: {{ ansible_net_all_ipv4_addresses }}
+    - name: list IPs
+      debug:
+        msg: {{ ansible_net_all_ipv4_addresses }}
     
     - name: create Loopback
       cisco.ios.ios_interfaces:
