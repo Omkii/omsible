@@ -1,6 +1,6 @@
 ---
 - name: Printing variables
-  hosts: cisco
+  hosts: routers
 
   tasks:
 
