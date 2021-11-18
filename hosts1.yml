@@ -1,0 +1,12 @@
+---
+master:
+  children:
+    routers:
+      hosts:
+        10.1.1.2
+
+  vars:
+    ansible_connection: network_cli
+    ansible_network_os: ios
+    ansible_uesr: omkar
+    ansible_ssh_pass: omkar
