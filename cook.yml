@@ -15,15 +15,13 @@
             description: TEST-Loopback
             enabled: true
 
-#    cisco.ios.ios_interface:
-#      name: Loopback1
- #     state: present      
+     
 
-    # - name: display hostname
+    - name: display hostname
 
-    #   debug: 
-    #    msg: "THE HOST NAME IS {{ ansible_net_hostname }}"
+      debug: 
+       msg: "THE HOST NAME IS {{ ansible_net_hostname }}"
     
-    #    debug:
-    #      msg: "{{ ios_interface }}"
+       debug:
+         msg: "{{ ios_interface }}"
 
