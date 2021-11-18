@@ -9,7 +9,7 @@
     #     msg: {{ ansible_net_all_ipv4_addresses }}
     
     - name: create Loopback
-      cisco.io.ios_interfaces:
+      cisco.ios.ios_interfaces:
         config:
           - name: Loopback1
             description: TEST-Loopback
