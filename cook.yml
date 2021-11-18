@@ -12,7 +12,11 @@
     cisco.ios.ios_interface:
       name: Loopback1
       state: present      
-  - name: display hostname
+  - name: gather details
+    gather_facts:
     gather_subset: all
+
+  - name: display hostname
+
     debug: 
       msg: "THE HOST NAME IS {{ ansible_net_hostname}}"
