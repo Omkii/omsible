@@ -16,8 +16,8 @@
   - name: display hostname
 
     debug: 
-      msg: "THE HOST NAME IS {{ ansible_net_hostname}}"
+      msg: "THE HOST NAME IS {{ ansible_net_hostname }}"
     
       debug:
-       msg: {{ ansible_net_version }}
+       msg: "{{ ansible_net_version }}"
 
