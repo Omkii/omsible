@@ -7,8 +7,8 @@
   tasks:
 
 
-  - name: Add loopback
-    gather_subset: all
+#  - name: Add loopback
+ #   gather_subset: all
     
 #    cisco.ios.ios_interface:
 #      name: Loopback1
