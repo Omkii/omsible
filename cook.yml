@@ -6,9 +6,9 @@
 
     - name: list IPs
       debug:
-        msg: "{{ ansible_net_all_ipv4_addresses }}"
+        msg: "{{ ansible_net_all_ipv4_addresses }}" #This pulls all the IP Addresses
     
-    - name: create Loopback
+    - name: create Loopback # WORKING for creating interfaces
       cisco.ios.ios_interfaces:
         config:
           - name: Loopback1
@@ -20,7 +20,8 @@
     - name: display hostname
 
       debug: 
-       msg: "THE HOST NAME IS {{ ansible_net_hostname }}"
+       msg: "THE HOST NAME IS {{ ansible_net_hostname }}" 
+       # WORKING display variable with custom note
     
       #  debug:
       #    msg: "{{ ios_interface }}"
