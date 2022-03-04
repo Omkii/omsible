@@ -1,0 +1,9 @@
+https://{{GT-ACI}}/api/aaaLogin.json
+{
+"aaaUser" : {
+"attributes" : {
+"name" : "{{uname}}",
+"pwd" : "{{pwd}}"
+}
+}
+}
