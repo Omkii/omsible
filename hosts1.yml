@@ -12,9 +12,5 @@ master:
     ansible_user: omkar
     ansible_ssh_pass: omkar
 
-apics:
-  my-apic-1:
-    anisble_host: https://sandboxapicdc.cisco.com/
-    ansible_user: admin
-    ansible_password: !v3G@!4@Y
+
 

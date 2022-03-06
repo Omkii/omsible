@@ -4,6 +4,7 @@
     host: https://sandboxapicdc.cisco.com/
     username: admin
     password: !v3G@!4@Y
+    ansible_connection: local
 
     # tenant: customer-xyz
     state: query
