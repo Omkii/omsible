@@ -25,7 +25,7 @@ def get_token():
 
     # response = requests.post(url,data=json.dumps(payload), headers=headers, verify=False).json()
     token = response['imdata'][0]['aaaLogin']['attributes']['token']
-    return token
-    # print(token)
+    # return token
+    print(token)
 
 get_token()
